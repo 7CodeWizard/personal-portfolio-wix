@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="icon" 
+            type="image/png" 
+            href="KLogo.png">
+    </head>
+
+    <body>
+        <nav>
+            <ul class="nav">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./index.html#skillssec">SKILLS</a></li>
+                <li><a href="./index.html#experience">EXPERIENCE</a></li>
+                <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                <li><a href="./contact.html" style="color:#D9C04E">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <header id="contact">
+            <h1 style="padding-top: 8%;">CONTACT<br/>
+                 ME<span style="color: #D9C04E;">.</span></h1>
+            
+            <br />
+            <div class="container">
+                <img src="KLogo.png" alt="logo of slash K in brackets" height="80" width="80">
+                <p style="color: #D9C04E; padding-top: 20px;">Feel free to reach me:
+                </p>
+
+                  
+                    <form style="color: #D1D1D1;" name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                        Name: <input type="text" name="fname"> <br />
+                        Email: <input type="email" name="femail"> <br />
+                        Message:  <textarea style="text-align: left;" rows = "5" cols = "60" name = "fmessage"></textarea><br />
+                        <input type="submit" value="Submit">
+                        </form>
+
+
+
+                <div class="contacticons">
+
+                    <a href="https://www.linkedin.com/in/kendra-raczek-741732139/"><img src="linkedin.png" alt="linkedin icon" width="30" style="margin: 0px 10px;">
+                    </a>
+                    <a href="https://www.facebook.com/kendra.raczek"><img src="facebook.png" alt="facebook icon" width="30" style="margin: 0px 10px;">
+                    </a>
+                    <a href="https://github.com/KendraRaczek"><img src="github.png" alt="github icon" width="30" style="margin: 0px 10px;">
+                    </a>
+                </div>
+            </div>
+            </header>
+
+            <footer>
+                <p class="foot">© Kendra Raczek 2020</p>
+    
+            </footer>
+
+            <script>
+                function validateForm() {
+                    var x = document.forms["myForm"]["fname"].value;
+                    var y = document.forms["myForm"]["femail"].value;
+                    var z = document.forms["myForm"]["fmessage"].value;
+                    if (x == "") {
+                        alert("Name must be filled out");
+                        return false;
+                    }
+                    if (y == "") {
+                        alert("Email must be filled out");
+                        return false;
+                    }
+                    if (z == "") {
+                        alert("Message must be filled out");
+                        return false;
+                    }
+                }
+            </script>
+    </body>
+
+</html>

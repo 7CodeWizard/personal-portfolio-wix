@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:300,500,800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <link rel="icon" 
+          type="image/png" 
+          href="KLogo.png">
+    </head>
+
+    <body style="background-color: #444448;">
+        <nav>
+            <ul class="nav">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./index.html#skillssec">SKILLS</a></li>
+                <li><a href="./index.html#experience">EXPERIENCE</a></li>
+                <li><a href="./portfolio.html" style="color:#D9C04E">PORTFOLIO</a></li>
+                <li><a href="./contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+
+        <div id="myportfolio">
+        <h1 style="padding-top: 8%;">MY<br />PORTFOLIO<span style="color: #D9C04E;">.</span></h1>
+        <!-- <div class="grid">
+            <div class="cell"> 
+                <img src="code.jpg" alt="programming code on a screen" height="500px" width="500px">
+            </div>
+            <div class="cell">
+                <a href="https://designlab.wisc.edu/commercialism-as-religion/"><img src="graphic.png" alt="two digital collages on a marble background" height="500px" width="500px"></a>
+            </div>
+            <div class="cell">
+
+                Remix Video
+                <video width="640" height="360" controls>
+                    <source src="alec.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+
+            </div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+          </div> -->
+
+          <div class="pgrid">
+            <div class="grid">
+              <div class="cell">
+                <video class="responsive-image" width="640" height="360" controls>
+                    <source src="alec.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+              </div>
+              <div class="cell">
+                <a href="https://designlab.wisc.edu/commercialism-as-religion/"><img src="graphic.png" alt="two digital collages on a marble background" class="responsive-image"></a>
+              </div>
+              <div class="cell">
+
+                <a href="https://issuu.com/illumination/docs/issuu_spring19_new"><img src="Illumination.png" alt="digital collage on the cover of Illumination Journal" class="responsive-image"></a>
+
+              </div>
+              <div class="cell">
+                <img src="websites.png" alt="implicit bias test and bio website on a mobile, desktop, and laptop screen" class="responsive-image" />
+              </div>
+
+              <div class="cell">
+                <img src="magazine.png" alt="opening layout of Shakespeare magazine article" class="responsive-image" />
+              </div>
+
+              <div class="cell">
+                <img src="pictographs.png" alt="14 square icons representing different graphic design classes, in a primary color scheme" class="responsive-image" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+          <footer>
+            <p class="foot">© Kendra Raczek 2020</p>
+
+            <button onclick="topFunction()" id="myBtn2" title="Go to top">Top</button>
+        </footer>
+
+        <script>
+          //Get the button:
+          mybutton = document.getElementById("myBtn2");
+
+          // When the user scrolls down 20px from the top of the document, show the button
+          window.onscroll = function() {scrollFunction()};
+
+          function scrollFunction() {
+          if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+          } else {
+              mybutton.style.display = "none";
+          }
+          }
+
+          // When the user clicks on the button, scroll to the top of the document
+          function topFunction() {
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+          }
+      </script>
+    </body>
+
+</html>
